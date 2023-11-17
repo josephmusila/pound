@@ -1,0 +1,401 @@
+:root{
+    --main-color: rgb(11, 88, 30);
+    --text-header:goldenrod ;
+    --accent-color: #d1d7db;
+
+}
+a{
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.nav-container{
+    background-color: var(--main-color);
+    height: 10rem;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+      transition: 0.5s;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100    ;
+  }
+
+.top-menu{
+    padding-top: 1rem;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+
+}
+.nav-top-links-wrapper{
+    /* display: flex;
+    flex-direction: row; */
+    
+}
+.nav-top-links{
+    display: flex;
+    flex-direction: row;
+}
+.nav-top-links p{
+    margin-right: 0.6rem;
+    color: white;
+    font-size: 0.8rem;
+}
+.tel{
+    width: 100%;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-align: end;
+
+}
+
+.menu{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: sticky;
+}
+
+.menu-item-wrapper{
+    /* width: 50%; */
+    height: 100%;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: row;
+}
+.menu-item{
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to bottom, #dee3e7, #f4f6f7);
+    margin-left: 0.1rem;
+    padding-top: 0.2rem;
+    border-top-right-radius: 0.1rem;
+    border-top-left-radius: 0.1rem;
+    text-align: center;
+    color: #4b5053;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.menu-item:hover{
+    color: #30536b; 
+}
+
+.submenu{
+    width: 100%;
+    height: 25%;
+    background: linear-gradient(to bottom, #f1f3f5,#94989b );
+}
+
+.submenu-items {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    position: sticky;
+    /* width: 200px; */
+}
+.submenu-items p{
+    margin-right: 1rem;
+    color: rgb(48, 52, 107);
+    margin-top: 0.4rem;
+    margin-left: 0.2rem;
+    padding-left: 0.2rem;
+    font-size: 0.9rem;
+    position: sticky;
+    /* display: none; */
+}
+
+.show-item{
+    display: contents;
+    color: red;
+}
+
+/* image section */
+
+.image-section{
+    margin-top: 10rem;
+    width: 100%;
+    height: 70vh;
+    background-color: rebeccapurple;
+    background: url('https://c4.wallpaperflare.com/wallpaper/967/938/472/rock-atlantic-ocean-rugged-miradouro-da-ponta-do-rosto-wallpaper-preview.jpg');
+    /* 'background-image', 'url(' + imageURL.image + ') */
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-size: cover;   
+}
+
+.image-section-content{
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;  
+}
+
+.image-content-title{
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bolder;
+}
+.image-section-button{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+.image-section-form{
+    width: 100%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* quote section */
+
+.quote-section{
+    margin: 2rem;
+}
+.quote-title{
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.quote-image-wrapper{
+    width: 100%;
+    height: 150px;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.quote-image-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+.quote-overlay-content{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.overlay-text{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.quote-overlay-content button{
+    width: 40%;
+    margin: auto;
+    background-color: rgb(24, 24, 94);
+}
+
+.quote-description{
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.see-more{
+    text-align: end;
+    margin-top: 0.5rem;
+}
+
+.see-more-btn{
+    padding: 0.2rem;
+    border: none;
+    background-color: rgb(110, 41, 41);
+    border-radius: 1rem;
+    font-size: 0.7rem;
+    color: white;
+}
+
+/* top trips */
+
+.top-trips{
+    margin-top: 3%;
+    margin-bottom: 2rem;
+}
+
+.top-trips-header-text{
+    text-align: center;
+    font-size: 2rem;
+    color: #30536b;
+    font-weight: bold;
+}
+.top-trips-content {
+    padding: 1rem;
+}
+.trips-content-items :nth-child(3){
+    border: none;
+}
+
+.top-trips-item{
+    padding: 1rem;
+    border-right: 1px solid rgba(68, 61, 61, 0.664);
+}
+.top-trips-desc{
+    font-size: 0.8rem;
+}
+
+/* explore */
+
+.explore{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.explore-text{
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 1rem;
+    border-right: 1px solid grey;
+    font-style: italic ;
+}
+.your-way{
+    font-size: 2rem !important;
+}
+
+.explore-text-desc{
+    font-style: italic;
+    color: gray;
+}
+
+/* packages */
+.see-more-pkg{
+    text-align: start;
+    margin-top: 0.7rem;
+}
+
+.see-more-btn-pkg{
+    padding: 0.2rem;
+    border: none;
+    background-color: rgb(56, 41, 110);
+    border-radius: 1rem;
+    font-size: 0.7rem;
+    color: white;
+}
+ 
+
+/* see more hr */
+.see-more-hr{
+    text-align: center;
+    margin-top: 0.7rem;
+    margin-bottom: 2rem;
+}
+
+.see-more-btn-hr{
+    padding: 0.4rem;
+    border: none;
+    background-color: rgb(110, 41, 41);
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* promotion section */
+.promotion-section{
+    margin-top: 3rem;
+}
+
+.promotion-logo-image{
+    height: 100px;
+    width: 150px;
+    overflow: hidden;
+}
+.promo-text-title{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.promotion-logo-image{
+    
+    width: 150px;
+    object-fit: contain;
+}
+
+.promo-text{
+    font-size: 1rem;
+    font-style: italic;
+    margin: auto;
+}
+
+.side-poster-placeholder{
+    width: 250px;
+    height: 300px;
+    background-color: beige;
+}
+
+/* more posters */
+
+.more-poster-wrapper{
+    height: 180px;
+    border-radius: 0.6rem;
+    width: 90%;
+    border: 2px solid rgba(0, 0, 0, 0.308);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* footer */
+
+.footer{
+    height: 70vh;
+    width: 100%;
+    background-color: #3498db;
+    
+}
+.inner-footer{
+    margin-top: 4rem;
+    padding-top: 4rem;
+    width: 100%;
+    height: 95%;
+    background-color: #6e818d;
+}
+
+.footer-items p{
+    color: black;
+    margin-bottom: 0;
+}
+
+.footer-items p a{
+    color: black;
+    font-size: 0.9rem;
+    margin-bottom: 0rem;
+    font-family: 'Times New Roman', Times, serif;
+}
