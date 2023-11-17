@@ -129,7 +129,7 @@ a{
 /* image section */
 
 .image-section{
-    margin-top: 10rem;
+    margin-top: 0rem;
     width: 100%;
     height: 70vh;
     background-color: rebeccapurple;
@@ -138,6 +138,10 @@ a{
     background-repeat: no-repeat;
     object-fit: contain;
     background-size: cover;   
+}
+
+.marg{
+    margin-top: 10rem;
 }
 
 .image-section-content{

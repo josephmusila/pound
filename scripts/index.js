@@ -14,6 +14,7 @@ $(document).ready(function(){
     var caretDown='<i class="fa fa-caret-down"></i>';
     var careRight='<i class="fa fa-caret-right"></i>';
 
+    
 
 
 
@@ -66,6 +67,9 @@ $(document).ready(function(){
   });
 
   var navbar = document.getElementById('navbar');
+  var imageSection=$('.image-section');
+   
+
   var sticky = navbar.offsetTop;
 
   window.onscroll = function() {
@@ -96,6 +100,7 @@ $(document).ready(function(){
   function stickNavbar() {
     if (window.pageYOffset >= sticky) {
       navbar.classList.add('sticky');
+      imageSection.classList.add('marg');
     } else {
       navbar.classList.remove('sticky');
     }
