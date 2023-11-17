@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  // stickNavbar();
     var destinations=$("#destinations");
     var sepcials=$("#specials");
     var whyUs=$("#why-us");
@@ -13,6 +13,9 @@ $(document).ready(function(){
     var menuCarets=$(".menu-item-wrapper").find(".caret-span");
     var caretDown='<i class="fa fa-caret-down"></i>';
     var careRight='<i class="fa fa-caret-right"></i>';
+
+    var imageSection = $('.image-section');
+    // imageSection.css('margin-top','0rem');
 
     
 
@@ -67,7 +70,7 @@ $(document).ready(function(){
   });
 
   var navbar = document.getElementById('navbar');
-  var imageSection=$('.image-section');
+  var imageSection=document.getElementById('image-section');
    
 
   var sticky = navbar.offsetTop;
@@ -100,9 +103,10 @@ $(document).ready(function(){
   function stickNavbar() {
     if (window.pageYOffset >= sticky) {
       navbar.classList.add('sticky');
-      imageSection.classList.add('marg');
+      imageSection.style.marginTop= '10rem';
     } else {
       navbar.classList.remove('sticky');
+      imageSection.classList.add('marg');
     }
   }
 
