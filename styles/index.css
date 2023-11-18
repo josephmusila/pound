@@ -9,6 +9,12 @@ a{
     color: inherit;
 }
 
+#nav-logo{
+   height: 60px; 
+   margin-bottom: 1rem;
+
+}
+
 .nav-container{
     background-color: var(--main-color);
     height: 10rem;
@@ -107,7 +113,7 @@ a{
     display: flex;
     flex-direction: row;
     margin-left: 2rem;
-    position: sticky;
+    position: fixed;
     /* width: 200px; */
 }
 .submenu-items p{
@@ -117,7 +123,8 @@ a{
     margin-left: 0.2rem;
     padding-left: 0.2rem;
     font-size: 0.9rem;
-    position: sticky;
+    position: relative;
+    white-space: nowrap;
     /* display: none; */
 }
 
@@ -126,7 +133,12 @@ a{
     color: red;
 }
 
-/* image section */
+/* image section */  
+
+.add-margin{
+    margin-top: 10rem ;
+}
+
 
 .image-section{
     margin-top: 0rem;
@@ -155,6 +167,7 @@ a{
 .image-content-title{
     font-size: 3rem;
     text-transform: capitalize;
+    text-align: center;
     color: white;
     font-weight: bolder;
 }
@@ -223,7 +236,11 @@ a{
 .quote-overlay-content button{
     width: 40%;
     margin: auto;
-    background-color: rgb(24, 24, 94);
+    background-color:  var(--text-header);
+}
+
+.quote-overlay-content button:hover{
+    background-color: var(--main-color);
 }
 
 .quote-description{
@@ -239,7 +256,7 @@ a{
 .see-more-btn{
     padding: 0.2rem;
     border: none;
-    background-color: rgb(110, 41, 41);
+    background-color:var(--main-color);
     border-radius: 1rem;
     font-size: 0.7rem;
     color: white;
@@ -304,7 +321,7 @@ a{
 .see-more-btn-pkg{
     padding: 0.2rem;
     border: none;
-    background-color: rgb(56, 41, 110);
+    background-color: var(--main-color);
     border-radius: 1rem;
     font-size: 0.7rem;
     color: white;
@@ -321,7 +338,7 @@ a{
 .see-more-btn-hr{
     padding: 0.4rem;
     border: none;
-    background-color: rgb(110, 41, 41);
+    background-color: var(--main-color);
     border-radius: 1rem;
     font-size: 0.9rem;
     color: white;

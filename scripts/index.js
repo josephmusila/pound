@@ -81,10 +81,10 @@ $(document).ready(function(){
 
   function getRandomSlide(index){
     var imageSlider=new Map([
-        ["YOUR NEXT DESTINATION: MADEIRA","https://c4.wallpaperflare.com/wallpaper/967/938/472/rock-atlantic-ocean-rugged-miradouro-da-ponta-do-rosto-wallpaper-preview.jpg"],
-        ["DISCOVER THE WONDERS OF VIETNAM","https://c4.wallpaperflare.com/wallpaper/878/61/227/landscape-nature-rice-paddy-terraces-wallpaper-preview.jpg"],
-        ["SIGHT SEE THROUGH CENTRAL & SOUTH AMERICA","https://c4.wallpaperflare.com/wallpaper/781/184/27/national-park-south-america-el-chalten-chile-wallpaper-preview.jpg"],
-        ["YOUR NEXT DESTINATION: AFRICA","https://c4.wallpaperflare.com/wallpaper/92/481/105/lion-lion-cub-family-cub-wallpaper-preview.jpg"]
+        ["YOUR NEXT DESTINATION: MADEIRA","./images/madeira.jpg"],
+        ["DISCOVER THE WONDERS OF VIETNAM","./images/vietnam.jpg"],
+        ["SIGHT SEE THROUGH CENTRAL & SOUTH AMERICA","./images/south-america.jpg"],
+        ["YOUR NEXT DESTINATION: AFRICA","./images/africa.jpg"]
     ]);
 
     var sliderImageTitles=Array.from(imageSlider.keys());
@@ -104,9 +104,13 @@ $(document).ready(function(){
     if (window.pageYOffset >= sticky) {
       navbar.classList.add('sticky');
       imageSection.style.marginTop= '10rem';
+       if(window.innerWidth <800){
+        imageSection.style.marginTop= '0rem';
+       }
+      // imageSection.classList.add('add-margin') ;
     } else {
       navbar.classList.remove('sticky');
-      imageSection.classList.add('marg');
+      // imageSection.classList.add('marg');
     }
   }
 
