@@ -191,6 +191,10 @@ a{
     justify-content: center;
 }
 
+.image-section-form input{
+    background-color: white;
+}
+
 
 /* quote section */
 
