@@ -25,7 +25,7 @@
     #nav-logo{
         height: 40px;
     }
-                                                                                        
+                                                                                                                                                        
     /* image section */
 .check-section{
     background-color: red;
@@ -57,5 +57,26 @@
     .image-section-form input{
         margin-bottom: 0.5rem;
         padding:0.2rem;
+    }
+
+    .explore-wrapper{
+        text-align: center ;    
+    }
+
+    /* promotion */
+
+    .side-poster-placeholder{
+        display: none;
+    }
+
+    .promo-text{
+        width: 100%;
+    }
+
+
+    /* more-posters */
+
+    .more-posters{
+        display: none;
     }
 }
