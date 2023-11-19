@@ -101,6 +101,10 @@ a{
 
 .menu-item:hover{
     color: #30536b; 
+    background-color: white;
+}
+.menu-item-wrapper div:hover{
+    background-color: white ;
 }
 
 .submenu{
@@ -162,7 +166,7 @@ a{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;  
-}
+} 
 
 .image-content-title{
     font-size: 3rem;
@@ -177,7 +181,7 @@ a{
     font-size: 1.5rem;
     background-color: white;
     border: none;
-    color: black;
+    color: var(--text-header) ;
     font-weight: bold;
 }
 
